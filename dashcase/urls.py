@@ -19,7 +19,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('', include('home.urls'), name='inicio'),
     url('home/', include('home.urls'), name='inicio'),
     url('cliente/macropack/', include('macropack.urls'), name='macropack'),
     url('contas/', include('contas.urls'), name='contas'),
