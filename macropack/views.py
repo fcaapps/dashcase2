@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
-def home(request):
+def macropack(request):
     return render(request, 'macropack.html')

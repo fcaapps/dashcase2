@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from .views import home
+from .views import macropack
 
 urlpatterns = [
-    url('', home, name='home'),
+    url('', macropack, name='macropack'),
 ]

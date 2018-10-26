@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap4',
+    'fa',
     'contas',
     'macropack',
     'home',
@@ -128,6 +130,10 @@ STATICFILES_DIRS = [
 # MEDIA
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
+
+# LOGIN
+LOGIN_URL = '/acesso/entrar'
+LOGIN_REDIRECT_URL = 'home'
 
 # USUÁRIO CUSTOMIZADO
 AUTH_USER_MODEL = 'contas.User'

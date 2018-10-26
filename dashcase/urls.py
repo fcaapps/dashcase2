@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('home/', include('home.urls'), name='inicio'),
     url('cliente/macropack/', include('macropack.urls'), name='macropack'),
-    url('contas/', include('contas.urls'), name='contas'),
+    url('acesso/', include('contas.urls'), name='contas'),
+    url('modelos/', include('modelos.urls'), name='modelos'),
 
 ]

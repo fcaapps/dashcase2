@@ -1,6 +1,9 @@
 from django.urls import path
-from .views import home
+from .views import contas, logout_sistema
+from django.contrib.auth.views import LoginView
 
 urlpatterns = [
-    path('', home, name="home"),
+    path('', contas, name="contas"),
+    path('entrar/', LoginView.as_view(template_name='login.html'), name="login"),
+    path('sair/', logout_sistema, name="logout"),
 ]
