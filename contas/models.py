@@ -2,10 +2,6 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
-    username = models.CharField(
-        verbose_name='Nome',
-        max_length=150
-    )
 
     email = models.EmailField(
         verbose_name='E-mail',
